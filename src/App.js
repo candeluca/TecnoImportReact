@@ -3,6 +3,31 @@ import './App.css';
 
 function App() {
   const name = 'CoderHouse'
+
+//operador ternario
+const condition = true
+if (condition) {
+  console.log ('verdadero')
+} else {
+  console.log ('falso')
+}
+
+condition ? console.log ('verdadero') : console.log ('falso')
+
+console.log ( condition ? 'verdadero' : 'falso')
+
+// spread operator: 
+
+const numeros = [1, 2, 3, 4, 5, 6]
+const letras = ['a', 'b', 'c', 'd']
+
+const alfanumericos = [...numeros].push (letras)
+const alfanumericosVersionS = [...numeros, ...letras]
+
+console.log ( { alfanumericos })
+
+console.log ( { alfanumericosVersionS })
+
   return (
     <div className="App">
       <nav class="navbar navbar-expand-lg bg-light">
