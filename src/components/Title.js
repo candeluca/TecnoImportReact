@@ -1,4 +1,4 @@
-const Title = (props) => {
+/* const Title = (props) => {
     return (
         <h1>
             {props.title}
@@ -7,4 +7,4 @@ const Title = (props) => {
 }
 
 
-export default Title;
+export default Title; */
