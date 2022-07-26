@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 
 const ItemCount = () => {
-    const [contador, setContador] = useState ()
-
+    const [contador, setContador] = useState (0)
+    console.log('')
     return (
-        <div> ItemCount </div>
+        <div> 
+            <span> {} </span>
+            <button></button>
+        </div>
     )
 }
 
