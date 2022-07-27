@@ -11,9 +11,9 @@ function App() {
 
   return (
     <div className="App">
-    <NavBar/> {/* 
+    <NavBar/> 
     <Container/>
-    <CartWidget/> */}
+    <CartWidget/> 
     <ItemListContainer greeting = 'Pagina cosas importadas' />
     </div>
   );

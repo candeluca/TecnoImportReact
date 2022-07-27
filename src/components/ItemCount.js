@@ -2,13 +2,16 @@ import React, { useState } from "react";
 
 const ItemCount = () => {
     const [contador, setContador] = useState (0)
-    console.log('')
+    console.log('me renderice')
+    const sumar = () => {
+        setContador(contador + 1)
+    }
     return (
         <div> 
-            <span> {} </span>
-            <button></button>
+            <span> {contador} </span>
+            <button onClick={sumar}> + </button>
         </div>
     )
 }
 
-export default ItemCount;
+export default ItemCount; 
