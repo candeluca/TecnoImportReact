@@ -1,8 +1,10 @@
 import ItemCount from "./ItemCount";
 
-const ItemListContainer = (greeting) => {
-    const onAdd = () => {
-        console.log ('producto agregado al carrito')
+    const ItemListContainer = (greeting) => {
+
+
+    const onAdd = (cantidad ) => {
+        console.log (`agregaste ${cantidad} productos al carrito`)
     }
 
 
