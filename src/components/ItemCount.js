@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ItemCount = ({initial, stock}) => {
+const ItemCount = ({initial, stock, agregarCarrito}) => {
     const [contador, setContador] = useState (initial)
     console.log('me renderice')
 
@@ -8,11 +8,11 @@ const ItemCount = ({initial, stock}) => {
         if(contador < stock) {
             setContador (contador + 1)
         }
-        
+
     }
 
     const restar = () => {
-        if (contador > initial) {
+        if (contador > 0) {
             setContador (contador - 1)
         }
 

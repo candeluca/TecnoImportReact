@@ -1,5 +1,12 @@
-function App () {
+import CartWidget from "./CartWidget";
+
+function NavBar () {
     return <>
+
+        <div>
+          <CartWidget />
+        </div>
+
     <nav className="navbar navbar-expand-lg bg-light">
     <div className="container-fluid">
     <a className="navbar-brand" href="#">TecnoImport</a>
@@ -19,4 +26,4 @@ function App () {
     </>
 }
 
-export default App;
+export default NavBar;
