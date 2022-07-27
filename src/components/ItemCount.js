@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-const ItemCount = () => {
-    const [contador, setContador] = useState (0)
+const ItemCount = ({initial, stock}) => {
+    const [contador, setContador] = useState (initial)
     console.log('me renderice')
     const sumar = () => {
         setContador(contador + 1)
