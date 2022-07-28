@@ -8,6 +8,23 @@ import ItemCount from "./ItemCount";
     }
 
 
+    const data = new Promise ((resolve, reject) => {
+
+        let condition = true
+
+        setTimeout (()=> {
+            if (condition) {
+                resolve ('Hay stock, su producto fue agregado')
+            }
+            else {
+                reject ('No se puede agregar, stock insuficiente')
+            }
+        }, 3000)
+
+    })
+
+    console.log (data)
+
     return (
         <div>
             <h3> {greeting} </h3>
