@@ -7,6 +7,10 @@ import ItemCount from "./ItemCount";
         console.log (`agregaste ${cantidad} productos al carrito`)
     }
 
+    const productos = [ 
+        {id: '01', name: 'Termo Stanley', precio: '$10000', }
+    ]
+
 
     const data = new Promise ((resolve, reject) => {
 

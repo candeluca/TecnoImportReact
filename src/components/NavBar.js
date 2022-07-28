@@ -1,3 +1,4 @@
+import App from "../App";
 import CartWidget from "./CartWidget";
 
 function NavBar () {
@@ -26,4 +27,4 @@ function NavBar () {
     </>
 }
 
-export default NavBar;
+export default App;
