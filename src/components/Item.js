@@ -8,9 +8,9 @@ const Prod = ({producto}) => {
 
     const onAdd = (cantidad) => {
         setMessage ( `Se agregaron ${cantidad} productos`)
-    }
+    } 
 
-    // agregar una card oara mostrar el producto 
+    // agregar una card para mostrar los productos 
 
 }
 

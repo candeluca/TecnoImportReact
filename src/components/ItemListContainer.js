@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ItemCount from "./ItemCount";
 
     const ItemListContainer = (greeting) => {
@@ -8,7 +9,10 @@ import ItemCount from "./ItemCount";
     }
 
     const productos = [ 
-        {id: '01', name: 'Termo Stanley', precio: '$10000', }
+        {id: '01', name: 'Termo Stanley', precio: '$10000'},
+        {id: '02', name: 'Apple Iphone', precio: '$300000'},
+        {id: '03', name: 'Apple AirPods', precio: '$60000'},
+        {id: '04', name: 'Apple MabBook', precio: '$400000'}
     ]
 
 
@@ -18,16 +22,24 @@ import ItemCount from "./ItemCount";
 
         setTimeout (()=> {
             if (condition) {
-                resolve ('Hay stock, su producto fue agregado')
+                resolve (productos)
             }
             else {
                 reject ('No se puede agregar, stock insuficiente')
             }
-        }, 3000)
+        }, 3000) 
 
     })
 
     console.log (data)
+
+
+    useEffect (()=> {
+        data
+        .then((res)=> console.log ('respuesta', res))
+    }, [])
+
+
 
     return (
         <div>
