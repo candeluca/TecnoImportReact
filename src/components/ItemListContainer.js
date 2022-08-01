@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ItemCount from "./ItemCount";
 
-    const ItemListContainer = (greeting) => {
+const ItemListContainer = (greeting) => {
 
+    const [listaProductos, setListaProductos] = useState ([])
 
     const onAdd = (cantidad ) => {
         console.log (`agregaste ${cantidad} productos al carrito`)
@@ -31,15 +32,13 @@ import ItemCount from "./ItemCount";
 
     })
 
-    console.log (data)
-
 
     useEffect (()=> {
         data
-        .then((res)=> console.log ('respuesta', res))
+        .then((res)=> setListaProductos (res))
     }, [])
 
-
+    console.log (listaProductos)
 
     return (
         <div>
