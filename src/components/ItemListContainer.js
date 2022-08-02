@@ -11,10 +11,10 @@ const ItemListContainer = (greeting) => {
     }
 
     const productos = [ 
-        {id: '01', name: 'Termo Stanley', precio: '$10000'},
-        {id: '02', name: 'Apple Iphone', precio: '$300000'},
-        {id: '03', name: 'Apple AirPods', precio: '$60000'},
-        {id: '04', name: 'Apple MabBook', precio: '$400000'}
+        {id: '01', name: 'Termo Stanley', price: '$10000', description:'lorem'},
+        {id: '02', name: 'Apple Iphone', price: '$300000', description:'lorem'},
+        {id: '03', name: 'Apple AirPods', price: '$60000', description:'lorem'},
+        {id: '04', name: 'Apple MabBook', price: '$400000', description:'lorem'}
     ]
 
 
