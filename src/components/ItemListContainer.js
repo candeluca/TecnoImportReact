@@ -10,7 +10,7 @@ const ItemListContainer = (greeting) => {
         console.log (`agregaste ${cantidad} productos al carrito`)
     }
 
-    const productos = [ 
+    const productos = [  
         {id: '01', name: 'Termo Stanley', price: '$10000', description:'lorem', img: 'https://www.carrefour.com.ar/termo-stanley-adventure-blanco-1-l-1-u/p'},
         {id: '02', name: 'Apple Iphone', price: '$300000', description:'lorem', img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1645036276543'},
         {id: '03', name: 'Apple AirPods', price: '$60000', description:'lorem', img: 'https://www.apple.com/v/airpods-pro/f/images/meta/og__ch3csr9zmviq_overview.png?202205060638'},

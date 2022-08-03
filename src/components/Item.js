@@ -11,7 +11,7 @@ const Item = ({producto}) => {
   </div>
   <ul className="list-group list-group-flush">
     <li className="list-group-item">{producto.description}</li>
-    <li className="list-group-item">${producto.price}</li>
+    <li className="list-group-item">{producto.price}</li>
   </ul>
 </div>
 
