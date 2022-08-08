@@ -5,7 +5,7 @@ import './App.css';
 import NavBar from './components/NavBar';
 import CartWidget from './components/CartWidget';
 import ItemListContainer from './components/ItemListContainer';
-import Item from
+import Item from './components/Item';
 
 function App() {
   const name = 'CoderHouse'
