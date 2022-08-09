@@ -4,8 +4,18 @@ import productos from "../productos";
 
 
 const ItemDetailContainer = () => {
-    const [details, setDetails] = useState ({})
+    
+    const [product, setProduct] = useState ({})
     const {loading, setLoading} = useState (true)
+
+
+    const getOneProduct = (id) => {
+
+        resolve (productos)
+        .then ((res) =>setProduct (res.find((item)=> item.id ==id)))
+        .finally (()=> setLoading (false));
+        
+    }, [id]) ;
 
     const data = new Promise ((resolve, reject) => {
 
@@ -22,7 +32,7 @@ const ItemDetailContainer = () => {
     
     useEffect (()=> {
         data
-        .then((res)=> setDetails (res))
+        .then((res)=> setProduct (res))
     }, []
     )    
 
@@ -30,7 +40,7 @@ const ItemDetailContainer = () => {
 
     <div>
         {details && 
-        <ItemDetail details={details} />
+        <ItemDetail product={product} />
         }
     </div>
  
