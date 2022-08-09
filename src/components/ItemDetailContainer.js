@@ -28,11 +28,14 @@ const ItemDetailContainer = () => {
 
     return (
 
-    <div> 
-        <ItemDetail details = {details} />
+    <div>
+        {details && 
+        <ItemDetail details={details} />
+        }
     </div>
+ 
 )
 
 }
 
-export default ItemDetailContainer;
+export default ItemDetailContainer; 
