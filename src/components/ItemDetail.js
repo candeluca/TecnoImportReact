@@ -10,7 +10,7 @@ const ItemDetail = ({producto}) => {
     const navigate = useNavigate ();
 
     const onAdd = () => {
-        let productToBuy = { id, name, price, description, img}; setCarrito (true); addToCart (productToBuy)
+        let productToBuy = { id, name, price, description, img, quantityToAdd: count}; setCarrito (true); addToCart (productToBuy)
     }
 
 return (
@@ -18,7 +18,7 @@ return (
     {producto.map ((producto)=> <Item key = {producto.id} producto = {producto}/>)}
 
     <div> 
-        <button onClick={ () => navigate ('/productos')}>
+        <button onClick={ () => navigate ('../productos')}>
             Seguir comprando
         </button>
     </div>
